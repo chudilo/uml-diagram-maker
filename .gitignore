@@ -1,1 +1,7 @@
 .venv
+*.sqlite3
+*package-lock.json
+*webpack-stats.json
+*bundles
+*node_modules
+*pycache*
