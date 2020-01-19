@@ -7,5 +7,6 @@ from . import views
 
 urlpatterns = [
     #path('', views.index, name='index'),
-    url(r'^$', TemplateView.as_view(template_name='index.html'), name='index'),
+    path('', TemplateView.as_view(template_name='index.html'), name='index'),
+    path('try', TemplateView.as_view(template_name='index.html'), name='index')
 ]

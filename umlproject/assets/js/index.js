@@ -1,13 +1,8 @@
-window.$ = window.jQuery = require('jquery');
-require('bootstrap-sass');
+import './bootstrap'
 
-import Vue from 'vue';
-import Demo from "./components/Demo.vue";
+import router from './routes'
 
-window.Vue = Vue;
 const app = new Vue({
     el: '#app',
-    components: {
-        Demo
-    }
+    router: router,
 });

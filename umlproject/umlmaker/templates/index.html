@@ -5,9 +5,17 @@
     <title>My Django Vue</title>
 </head>
 <body>
+
     <div id="app">
-        <demo></demo>
+        <router-link to="/">Home</router-link>
+        <router-link to="/try">Try</router-link>
+
+        <router-view></router-view>
     </div>
+
+
+
     {% render_bundle 'main' %}
+
 </body>
 </html>
